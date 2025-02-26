@@ -19,7 +19,7 @@ class BigQueryLoader:
     def setup_credentials(self):
         """Configura as credenciais do BigQuery usando o arquivo de service account"""
         try:
-            credentials_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'SA-maxpayne.json'))
+            credentials_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'DQC.json'))
             
             if not os.path.exists(credentials_path):
                 raise FileNotFoundError(f"Arquivo de credenciais não encontrado em: {credentials_path}")
