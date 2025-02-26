@@ -1,4 +1,4 @@
-CREATE OR REPLACE TABLE `ps-eng-dados-ds3x.sergio_maxpayne.icf_icc_refined` AS
+CREATE OR REPLACE TABLE `ps-eng-dados-*SECRET*.icf_icc_refined` AS
 SELECT
     icc.ano_mes,
     icc.indice AS icc_indice,
@@ -8,6 +8,6 @@ SELECT
     icf.variacao_mes AS icf_variacao_mes,
     icf.variacao_ano AS icf_variacao_ano,
     CURRENT_TIMESTAMP() AS load_timestamp
-FROM `ps-eng-dados-ds3x.sergio_maxpayne.icc_trusted` icc
-JOIN `ps-eng-dados-ds3x.sergio_maxpayne.icf_trusted` icf
+FROM `ps-eng-dados-*SECRET*.icf_icc_refined` icc
+JOIN `ps-eng-dados-*SECRET*.icf_icc_refined` icf
     ON icc.ano_mes = icf.ano_mes;
