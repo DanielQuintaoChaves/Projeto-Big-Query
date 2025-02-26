@@ -187,12 +187,12 @@ class FecomercioScraper:
                 
     def download_icc(self):
         return self.download_file(
-            "https://www.fecomercio.com.br/pesquisas/indice/icc",
+            "https://www.***SECRET***.com.br/pesquisas/indice/icc",
             "icc.xlsx"
         )
         
     def download_icf(self):
         return self.download_file(
-            "https://www.fecomercio.com.br/pesquisas/indice/icf",
+            "https://www.***SECRET***.com.br/pesquisas/indice/icf",
             "icf.xlsx"
         )
