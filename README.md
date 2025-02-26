@@ -1,6 +1,6 @@
-# Fecomércio Data Pipeline
+# Data Pipeline
 
-Este projeto implementa um pipeline de dados para coletar e processar índices econômicos da Fecomércio (ICC e ICF).
+Este projeto implementa um pipeline de dados para coletar e processar índices econômicos da ***EMPRESA PRIVADA*** (ICC e ICF).
 
 ## Estrutura do Projeto
 
@@ -15,7 +15,7 @@ project/
 │       ├── create_trusted_tables.sql
 │       └── create_refined_table.sql
 ├── requirements.txt
-├── SA-maxpayne.json
+├── DQC.json
 └── README.md
 ```
 
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 2. Configure as credenciais:
 
-- Coloque o arquivo `SA-maxpayne.json` na raiz do projeto
+- Coloque o arquivo `DQC.json` na raiz do projeto
 
 ### Local
 
